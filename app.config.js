@@ -21,6 +21,7 @@ export default ({ config }) => ({
     supportsTablet: true,
   },
   android: {
+    package: "com.recycool",
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundColor: "#FFFFFF",

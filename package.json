@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.25.4",
     "@chromatic-com/storybook": "^2.0.2",
     "@expo/metro-runtime": "~3.2.3",
     "@storybook/addon-actions": "^8.3.5",
@@ -53,7 +54,6 @@
     "@storybook/test": "^8.3.5",
     "@types/react": "~18.2.79",
     "babel-loader": "^8.2.3",
-    "@babel/preset-env": "^7.25.4",
     "babel-plugin-react-docgen-typescript": "^1.5.1",
     "babel-plugin-react-native-web": "^0.19.10",
     "cross-env": "^7.0.3",
