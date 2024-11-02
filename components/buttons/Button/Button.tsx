@@ -23,11 +23,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     paddingVertical: 8,
     backgroundColor: COLORS.primary,
-    alignSelf: "flex-start",
     borderRadius: RADIUS,
     width: CONTENT_WIDTH,
     alignItems: "center",
     justifyContent: "center",
+    alignSelf: "center",
   },
-  text: { color: "white", fontSize: 16, fontWeight: "bold" },
 });

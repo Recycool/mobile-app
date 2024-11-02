@@ -7,7 +7,7 @@ interface ButtonTextProps {
 }
 
 export default function ButtonText({ text }: ButtonTextProps) {
-  return <Text style={styles.text}>ButtonText</Text>;
+  return <Text style={styles.text}>{text}</Text>;
 }
 
 const styles = StyleSheet.create({
