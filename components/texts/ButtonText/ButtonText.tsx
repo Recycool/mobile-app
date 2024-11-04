@@ -4,16 +4,17 @@ import { COLORS } from "../../../constants/colors";
 
 interface ButtonTextProps {
   text: string;
+  color?: string;
 }
 
-export default function ButtonText({ text }: ButtonTextProps) {
-  return <Text style={styles.text}>{text}</Text>;
+export default function ButtonText({ text, color }: ButtonTextProps) {
+  return <Text style={[styles.text, { color }]}>{text}</Text>;
 }
 
 const styles = StyleSheet.create({
   text: {
     color: COLORS.white,
     fontWeight: "400",
-    fontFamily: "SF Pro Display",
+    // fontFamily: "SF Pro Display",
   },
 });

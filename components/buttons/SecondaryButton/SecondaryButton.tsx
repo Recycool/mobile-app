@@ -9,34 +9,41 @@ import { COLORS } from "../../../constants/colors";
 import { CONTENT_WIDTH, RADIUS } from "../../../constants/sizes";
 import ButtonText from "../../texts/ButtonText/ButtonText";
 
-interface ButtonProps {
+interface SecondaryButtonProps {
   disabled?: boolean;
   onPress: () => void;
   style?: StyleProp<ViewStyle>;
   text: string;
 }
 
-const Button = ({ disabled, onPress, style, text }: ButtonProps) => {
+const SecondaryButton = ({
+  disabled,
+  onPress,
+  style,
+  text,
+}: SecondaryButtonProps) => {
   return (
     <TouchableOpacity
       disabled={disabled}
       style={[{ ...styles.container, opacity: disabled ? 0.4 : 1 }, style]}
       onPress={onPress}
     >
-      <ButtonText color={COLORS.white} text={text} />
+      <ButtonText color={COLORS.primary} text={text} />
     </TouchableOpacity>
   );
 };
 
-export default Button;
+export default SecondaryButton;
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 32,
     paddingVertical: 8,
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.secondary,
     borderRadius: RADIUS,
     width: CONTENT_WIDTH,
     alignItems: "center",
     justifyContent: "center",
+    borderWidth: 1,
+    borderColor: COLORS.primary,
   },
 });

@@ -2,11 +2,11 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import React from "react";
 import { View } from "react-native";
-import Button from "./Button";
+import SecondaryButton from "./SecondaryButton";
 
 const meta = {
-  title: "Button",
-  component: Button,
+  title: "SecondaryButton",
+  component: SecondaryButton,
   args: {
     text: "Hello world",
   },
@@ -17,7 +17,7 @@ const meta = {
       </View>
     ),
   ],
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof SecondaryButton>;
 
 export default meta;
 
@@ -26,7 +26,5 @@ type Story = StoryObj<typeof meta>;
 export const Basic: Story = {
   args: {
     onPress: action("onPress"),
-    disabled: false,
-    style: {}
   },
 };
