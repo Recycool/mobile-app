@@ -1,7 +1,7 @@
 export default ({ config }) => ({
   ...config,
-  name: "HelloWorld",
-  slug: "expo-template-blank-typescript",
+  name: "Recycool",
+  slug: "RC",
   version: "1.0.0",
   orientation: "portrait",
   icon: "./assets/icon.png",
@@ -21,6 +21,7 @@ export default ({ config }) => ({
     supportsTablet: true,
   },
   android: {
+    package: "com.recycool",
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundColor: "#FFFFFF",

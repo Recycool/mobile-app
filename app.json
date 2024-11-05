@@ -1,4 +1,13 @@
 {
-  "name": "Recycool",
-  "slug": "Recycool"
+  "expo": {
+    "plugins": [
+          "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/SFPRODISPLAYREGULAR.otf"]
+        }
+      ]
+    ]
+  }
 }
